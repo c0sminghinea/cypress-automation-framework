@@ -1,0 +1,14 @@
+{
+  "jbhifi": {
+    "searchTerms": {
+      "primary": "TV",
+      "accessory": "Accessories"
+    },
+    "minRating": 3,
+    "sortOptions": {
+      "priceHighKeywords": ["price", "high"],
+      "priceLowKeywords": ["price", "low"]
+    },
+    "expectedCartItems": 2
+  }
+}

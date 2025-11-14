@@ -1,0 +1,45 @@
+{
+  "statistics": [
+    {
+      "label": "Years",
+      "description": "Number of years in industry",
+      "value": "17+",
+      "minValue": 17
+    },
+    {
+      "label": "SaaS Products",
+      "description": "Number of SaaS products",
+      "value": "11",
+      "minValue": 11
+    },
+    {
+      "label": "airports worldwide",
+      "description": "Number of airports worldwide",
+      "value": "60+",
+      "minValue": 60
+    },
+    {
+      "label": "Users Worldwide",
+      "description": "Total users worldwide",
+      "value": "300k",
+      "minValue": 300000
+    }
+  ],
+  "socialMedia": [
+    {
+      "platform": "LinkedIn",
+      "domain": "linkedin.com",
+      "icon": "linkedin"
+    },
+    {
+      "platform": "Instagram",
+      "domain": "instagram.com",
+      "icon": "instagram"
+    },
+    {
+      "platform": "Facebook",
+      "domain": "facebook.com",
+      "icon": "facebook"
+    }
+  ]
+}

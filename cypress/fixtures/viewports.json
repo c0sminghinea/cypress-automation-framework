@@ -1,0 +1,16 @@
+{
+  "viewports": {
+    "mobile": {
+      "name": "mobile",
+      "width": 375,
+      "height": 667,
+      "description": "iPhone SE viewport"
+    },
+    "desktop": {
+      "name": "desktop",
+      "width": 1280,
+      "height": 720,
+      "description": "Standard desktop viewport"
+    }
+  }
+}

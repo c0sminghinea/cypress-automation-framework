@@ -1,0 +1,36 @@
+{
+  "name": "cypress-ecommerce-automation",
+  "version": "1.0.0",
+  "description": "Cypress E2E test suite - Website testing and JB Hi-Fi shopping automation by Cosmin Ghinea",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:headed": "cypress run --headed",
+    "test": "cypress run --browser chrome",
+    "test:alabs": "cypress run --browser chrome --spec \"cypress/e2e/alabs/**/*.cy.js\"",
+    "test:jbhifi": "cypress run --browser chrome --spec \"cypress/e2e/jbhifi/**/*.cy.js\"",
+    "test:report": "npm run clean:reports && npm test && npm run report:merge && npm run report:generate",
+    "test:report:alabs": "npm run clean:reports && npm run test:alabs && npm run report:merge && npm run report:generate",
+    "test:report:jbhifi": "npm run clean:reports && npm run test:jbhifi && npm run report:merge && npm run report:generate",
+    "report:merge": "mochawesome-merge \"cypress/reports/mochawesome/mochawesome*.json\" -o cypress/reports/mochawesome/report.json",
+    "report:generate": "marge cypress/reports/mochawesome/report.json -f report -o cypress/reports/mochawesome",
+    "report:open": "open cypress/reports/mochawesome/report.html",
+    "clean:reports": "rm -rf cypress/reports"
+  },
+  "keywords": [
+    "cypress",
+    "testing",
+    "e2e"
+  ],
+  "author": "Cosmin Ghinea",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cypress": "^0.1.6",
+    "cypress": "^13.17.0",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.3.2"
+  }
+}
